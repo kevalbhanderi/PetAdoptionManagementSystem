@@ -1,0 +1,60 @@
+.applications-list {
+  margin: 20px 0;
+}
+
+.application-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: fadeIn 0.4s ease-out;
+  animation-fill-mode: both;
+}
+
+.application-card:nth-child(1) { animation-delay: 0.05s; }
+.application-card:nth-child(2) { animation-delay: 0.1s; }
+.application-card:nth-child(3) { animation-delay: 0.15s; }
+.application-card:nth-child(4) { animation-delay: 0.2s; }
+
+.application-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.application-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.application-pet-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.application-pet-link h3 {
+  margin: 0;
+  color: #4CAF50;
+  transition: all 0.2s;
+}
+
+.application-pet-link:hover h3 {
+  text-decoration: underline;
+  transform: translateX(5px);
+  color: #45a049;
+}
+
+.application-info {
+  margin: 15px 0;
+}
+
+.application-info p {
+  margin: 8px 0;
+  color: #666;
+}
+
